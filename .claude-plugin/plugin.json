@@ -1,0 +1,13 @@
+{
+  "name": "novel-creator",
+  "version": "1.0.0",
+  "description": "一个基于工作流的中文小说创作助手，涵盖从头脑风暴到初稿撰写的全过程。包含丰富的写作指南和模板。",
+  "author": {
+    "name": "Claude Code"
+  },
+  "keywords": ["小说", "网文", "写作", "仙侠", "玄幻", "创作"],
+  "commands": "./commands",
+  "agents": "./agents",
+  "skills": "./skills",
+  "hooks": "./hooks/hooks.json"
+}

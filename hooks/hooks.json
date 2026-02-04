@@ -1,0 +1,24 @@
+{
+  "PostToolUse": [
+    {
+      "matcher": "Write",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "如果刚才写入的文件是小说章节（在 novel/chapters/ 目录下），请：\n1. 计算该章节的字数\n2. 提醒用户章节已保存\n3. 询问是否需要继续撰写下一章或进行修改\n\n如果不是章节文件，则无需特别提示。"
+        }
+      ]
+    }
+  ],
+  "Stop": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "在结束会话前，如果当前正在进行小说创作工作：\n1. 检查 .novel-creator.state.json 是否已更新\n2. 如果有未保存的内容，提醒用户\n3. 简要总结本次会话的进展"
+        }
+      ]
+    }
+  ]
+}
